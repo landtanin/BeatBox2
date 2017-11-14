@@ -1,10 +1,12 @@
 package com.landtanin.beatbox;
 
+import android.databinding.BaseObservable;
+
 /**
  * Created by Tanin on 14/11/2017.
  */
 
-public class SoundViewModel {
+public class SoundViewModel extends BaseObservable{
     private Sound mSound;
     private BeatBox mBeatBox;
 
