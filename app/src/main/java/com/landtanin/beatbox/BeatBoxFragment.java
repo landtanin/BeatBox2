@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.landtanin.beatbox.databinding.FragmentBeatBoxBinding;
+import com.landtanin.beatbox.databinding.ListItemSoundBinding;
 
 public class BeatBoxFragment extends Fragment {
 
@@ -27,4 +29,16 @@ public class BeatBoxFragment extends Fragment {
 
         return binding.getRoot();
     }
+
+    private class SoundHolder extends RecyclerView.ViewHolder {
+
+        private ListItemSoundBinding mBinding;
+
+        public SoundHolder(ListItemSoundBinding binding) {
+            super(binding.getRoot());
+            mBinding = binding;
+        }
+    }
+
+
 }
