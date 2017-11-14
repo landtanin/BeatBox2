@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import com.landtanin.beatbox.databinding.FragmentBeatBoxBinding;
 import com.landtanin.beatbox.databinding.ListItemSoundBinding;
 
+import java.util.List;
+
 public class BeatBoxFragment extends Fragment {
 
     private BeatBox mBeatBox;
@@ -52,6 +54,12 @@ public class BeatBoxFragment extends Fragment {
 
     private class SoundAdapter extends RecyclerView.Adapter<SoundHolder> {
 
+        private List<Sound> mSounds;
+
+        public SoundAdapter(List<Sound> sounds) {
+            mSounds = sounds;
+        }
+
         @Override
         public SoundHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             LayoutInflater inflater = LayoutInflater.from(getActivity());
@@ -66,7 +74,7 @@ public class BeatBoxFragment extends Fragment {
 
         @Override
         public int getItemCount() {
-            return 0;
+            return mSounds.size();
         }
     }
 
