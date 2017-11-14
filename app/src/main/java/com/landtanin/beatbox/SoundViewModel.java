@@ -22,6 +22,7 @@ public class SoundViewModel extends BaseObservable{
 
     public void setSound(Sound sound) {
         this.mSound = sound;
+        notifyChange();
     }
 
     @Bindable
