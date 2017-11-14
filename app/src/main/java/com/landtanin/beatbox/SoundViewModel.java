@@ -1,6 +1,7 @@
 package com.landtanin.beatbox;
 
 import android.databinding.BaseObservable;
+import android.databinding.Bindable;
 
 /**
  * Created by Tanin on 14/11/2017.
@@ -23,6 +24,7 @@ public class SoundViewModel extends BaseObservable{
         this.mSound = sound;
     }
 
+    @Bindable
     public String getTitle(){
         return mSound.getName();
     }
