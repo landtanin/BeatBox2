@@ -20,4 +20,9 @@ public class SoundViewModel {
     public void setSound(Sound sound) {
         this.mSound = sound;
     }
+
+    public String getTitle(){
+        return mSound.getName();
+    }
+
 }
