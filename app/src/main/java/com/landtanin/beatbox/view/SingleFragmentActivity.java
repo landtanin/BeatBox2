@@ -1,9 +1,11 @@
-package com.landtanin.beatbox;
+package com.landtanin.beatbox.view;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+
+import com.landtanin.beatbox.R;
 
 /**
  *

@@ -3,6 +3,9 @@ package com.landtanin.beatbox;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 
+import com.landtanin.beatbox.model.BeatBox;
+import com.landtanin.beatbox.model.Sound;
+
 /**
  * Created by Tanin on 14/11/2017.
  */

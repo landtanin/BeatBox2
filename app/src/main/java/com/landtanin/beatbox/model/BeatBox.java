@@ -1,4 +1,4 @@
-package com.landtanin.beatbox;
+package com.landtanin.beatbox.model;
 
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;

@@ -1,4 +1,4 @@
-package com.landtanin.beatbox;
+package com.landtanin.beatbox.view;
 
 import android.support.v4.app.Fragment;
 

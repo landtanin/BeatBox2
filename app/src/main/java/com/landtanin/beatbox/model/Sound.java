@@ -1,4 +1,4 @@
-package com.landtanin.beatbox;
+package com.landtanin.beatbox.model;
 
 /**
  * Created by Tanin on 14/11/2017.

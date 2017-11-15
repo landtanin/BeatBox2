@@ -1,4 +1,8 @@
-package com.landtanin.beatbox;
+package com.landtanin.beatbox.viewmodel;
+
+import com.landtanin.beatbox.model.BeatBox;
+import com.landtanin.beatbox.model.Sound;
+import com.landtanin.beatbox.SoundViewModel;
 
 import org.junit.Before;
 import org.junit.Test;

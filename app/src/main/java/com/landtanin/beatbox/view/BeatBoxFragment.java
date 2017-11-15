@@ -1,4 +1,4 @@
-package com.landtanin.beatbox;
+package com.landtanin.beatbox.view;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -10,6 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.landtanin.beatbox.model.BeatBox;
+import com.landtanin.beatbox.R;
+import com.landtanin.beatbox.model.Sound;
+import com.landtanin.beatbox.SoundViewModel;
 import com.landtanin.beatbox.databinding.FragmentBeatBoxBinding;
 import com.landtanin.beatbox.databinding.ListItemSoundBinding;
 
