@@ -32,6 +32,6 @@ public class Sound {
     }
 
     public void setSoundId(Integer soundId) {
-        mSoundId = mSoundId;
+        mSoundId = soundId;
     }
 }
