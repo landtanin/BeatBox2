@@ -21,7 +21,7 @@ public class SoundViewModelTest {
 
         mBeatBox = mock(BeatBox.class);
 
-        mSound = new Sound("assetPath"); // could this be any text?
+        mSound = new Sound("this could be anything");
         mSubject = new SoundViewModel(mBeatBox);
 
         mSubject.setSound(mSound);
