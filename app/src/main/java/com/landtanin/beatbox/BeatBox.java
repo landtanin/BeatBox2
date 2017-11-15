@@ -42,6 +42,10 @@ public class BeatBox {
 
     }
 
+    public void release(){
+        mSoundPool.release();
+    }
+
     // load sound into List of Sound (mSounds)
     private void loadSounds() {
 
