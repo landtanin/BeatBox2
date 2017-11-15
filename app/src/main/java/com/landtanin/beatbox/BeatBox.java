@@ -2,6 +2,8 @@ package com.landtanin.beatbox;
 
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.util.Log;
 
 import java.io.IOException;
@@ -16,12 +18,16 @@ public class BeatBox {
 
     private static final String TAG = "BeatBox";
     private static final String SOUNDS_FOLDER = "sample_sounds";
+    private static final int MAX_SOUNDS = 5;
 
     private AssetManager mAssets;
     private List<Sound> mSounds = new ArrayList<>();
+    private SoundPool mSoundPool;
 
     public BeatBox(Context context) {
         mAssets = context.getAssets();
+        // SoundPool(maximum sounds to play at a given time, kind of audio stream, quality)
+        mSoundPool = new SoundPool(MAX_SOUNDS, AudioManager.STREAM_MUSIC, 0);
         loadSounds();
     }
 
