@@ -6,6 +6,7 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 /**
  * Created by Tanin on 15/11/2017.
@@ -30,5 +31,17 @@ public class SoundViewModelTest {
     public void exposesSoundNameAsTitle() {
         assertThat(mSubject.getTitle(), is(mSound.getName()));
     }
+
+    @Test
+    public void callsBeatBoxPlayOnButtonClicked(){
+
+        mSubject.onButtonClicked();
+
+        // verify() is Mockito's method.
+        // This can be interpreted as - Verify that the play(...) method was called on mBeatBox with mSound as a parameter
+        verify(mBeatBox).play(mSound);
+
+    }
+
 
 }
