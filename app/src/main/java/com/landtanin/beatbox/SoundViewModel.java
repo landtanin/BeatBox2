@@ -30,4 +30,7 @@ public class SoundViewModel extends BaseObservable{
         return mSound.getName();
     }
 
+    public void onButtonClicked() {
+
+    }
 }
