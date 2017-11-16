@@ -1,4 +1,4 @@
-package com.landtanin.beatbox;
+package com.landtanin.beatbox.viewmodel;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;

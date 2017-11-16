@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="com.landtanin.beatbox.SoundViewModel"
+            type="com.landtanin.beatbox.viewmodel.SoundViewModel"
             />
 
     </data>
