@@ -5,24 +5,29 @@ import com.landtanin.beatbox.model.Sound;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
 /**
  * Created by Tanin on 15/11/2017.
  */
 public class SoundViewModelTest {
+
+    @Mock
     private BeatBox mBeatBox;
+
     private Sound mSound;
     private SoundViewModel mSubject;
 
     @Before
     public void setUp() throws Exception {
 
-        mBeatBox = mock(BeatBox.class);
+//        mBeatBox = mock(BeatBox.class);
+        MockitoAnnotations.initMocks(this);
 
         mSound = new Sound("this could be anything");
         mSubject = new SoundViewModel(mBeatBox);

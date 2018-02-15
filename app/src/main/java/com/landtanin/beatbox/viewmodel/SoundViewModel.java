@@ -11,9 +11,9 @@ import com.landtanin.beatbox.model.Sound;
  */
 
 public class SoundViewModel extends BaseObservable{
+
     private Sound mSound;
     private BeatBox mBeatBox;
-
 
     public SoundViewModel(BeatBox beatBox) {
         mBeatBox = beatBox;
